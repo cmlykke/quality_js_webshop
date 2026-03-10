@@ -23,6 +23,9 @@
 - npx playwright test --ui
 
 
+
+# For Selenium
+
 # intall javascript dependencies in root:
 
 C:\Users\USER\MYPROJECTS\quality_js_webshop> npm install --save-dev json-server

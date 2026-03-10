@@ -8,7 +8,7 @@
 - npm run frontend
 
 # Run selenium:
-- npx mocha seleniumtest/webshop_test.js
+- npx mocha etoe_seleniumtest/webshop_test.js
 
 # Run Cypress:
 - no UI:
@@ -16,6 +16,11 @@
 - with UI:
 - npm run test:cypress:open
 
+# Run Playwright:
+- no UI:
+- npx playwright test
+- with UI:
+- npx playwright test --ui
 
 
 # intall javascript dependencies in root:

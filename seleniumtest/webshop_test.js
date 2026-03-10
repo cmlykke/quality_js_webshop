@@ -1,4 +1,5 @@
 const { Builder, By, until } = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
 const { expect } = require('chai');
 const { createWebshopHelpers } = require('./webshop_helpers');
 
@@ -10,7 +11,8 @@ describe('EK Webshop Happy Path', function () {
     const baseUrl = 'http://127.0.0.1:8080/';
 
     before(async function () {
-        driver = await new Builder().forBrowser('chrome').build();
+        driver = await new Builder().forBrowser('MicrosoftEdge').build();
+        //driver = await new Builder().forBrowser('chrome').build();
         helper = createWebshopHelpers(driver, baseUrl, By, until);
     });
 

@@ -1,11 +1,20 @@
 
 
-# after setup / install:
+# install:
+- npm install
+
+# start servers:
 - npm run server
 - npm run frontend
+
+# Run selenium:
 - npx mocha seleniumtest/webshop_test.js
 
-
+# Run Cypress:
+- no UI:
+- npm run test:cypress
+- with UI:
+- npm run test:cypress:open
 
 
 

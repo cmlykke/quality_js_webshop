@@ -1,14 +1,17 @@
 {
   "devDependencies": {
     "chai": "^4.3.0",
+    "cypress": "^14.5.4",
+    "http-server": "^14.1.1",
     "json-server": "^1.0.0-beta.12",
-    "mocha": "^10.0.0",
-    "http-server": "^14.1.1"
+    "mocha": "^10.0.0"
   },
   "scripts": {
     "server": "json-server --watch data/users.json --host 127.0.0.1",
     "frontend": "http-server . -p 8080 -c-1",
-    "test": "mocha seleniumtest/webshop_test.js"
+    "test": "mocha etoe_seleniumtest/webshop_test.js",
+    "test:cypress": "cypress run",
+    "test:cypress:open": "cypress open"
   },
   "dependencies": {
     "selenium-webdriver": "^4.41.0"
